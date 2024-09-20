@@ -1,4 +1,5 @@
 const express = require("express");
+require('dotenv').config();  
 const { io } = require("socket.io-client");
 const { v4: uuidv4 } = require("uuid");
 const { ProxyAgent } = require("proxy-agent");
