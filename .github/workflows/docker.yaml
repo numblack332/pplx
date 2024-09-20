@@ -7,7 +7,7 @@ on:
 env:  
   DOCKER_HUB_USERNAME: ${{ secrets.DOCKER_HUB_USERNAME }}  
   DOCKER_HUB_ACCESS_TOKEN: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}  
-  IMAGE_NAME: deckforme/pplx  
+  IMAGE_NAME: ${{ secrets.DOCKER_HUB_USERNAME }}/${{ secrets.IMAGE_NAME }}
 
 jobs:  
   docker-build-and-push:  
